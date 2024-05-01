@@ -1,65 +1,58 @@
 div>h1 {
+    /* color: rgba(6, 98, 255, 1); */
+    color: #ff0000;
+}
+
+p{
+   color: gray; 
+}
+
+.text:hover{
     color: red;
 }
 
-.css-header {
-    background-color: blue;
-}
-
-.css-header:hover {
-    background-color: black;
-}
-
-#Helloworld-header {
-    background-color: salmon;
-}
-
-.big-box {
-    background-color: #001aff;
-
-    width: 80%;
-}
-
-.box {
-    background: #ff4800;
-
-    padding: 10px;
-    margin: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-width: 5px;
+.big-box{
+    background-color: #ff0000;
+    padding-top: 20px;
 
     width: 50%;
+    max-width: 250px;
 }
 
-.grid-container {
+.box{
+    width: 10px;
+    background-color: #0066ff;
+
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.grid-container{
+    margin: 20px;
+    background-color: #ff0000;
+    padding: 10px;
+
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 5px;
-    padding: 5px;
-
-    background-color: #001aff;
+    gap: 20px;
 }
 
-.grid-item {
-    height: 20px;
-
+.grid-item{
     padding: 10px;
-    background-color: #ff4800;
+    background-color: antiquewhite;
 }
 
-.flex-container {
+.flex-container{
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex;
 
-    width: 50%;
-    background-color: #001aff;
+    background-image: linear-gradient(90deg, rgba(25, 136, 247, 1) 0%, rgba(255, 187, 0, 1) 100%);
 }
 
-.flex-item {
-    width: 100px;
-    height: 20px;
-    padding: 10px;
-    background-color: #ff4800;
+.flex-item{
+    width: 150px;
+
+    background-color: #0066ff;
 }
