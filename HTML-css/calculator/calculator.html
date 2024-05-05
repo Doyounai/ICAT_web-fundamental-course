@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="https://kit.fontawesome.com/35baa2468e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <!-- javascript modify width on history click -->
+        <div class="history-container">
+            <div class="history-title">History</div>
+            <!-- javascript appendchild ในนี้ -->
+            <div id="history-content" class="history-content"></div>
+        </div>
+    </div>
+    <div class="main-container">
+        <button class="history"><i class="fa-solid fa-clock-rotate-left"></i></button>
+        <div class="result-container">
+            <p id="history">...</p>
+            <p id="result">...</p>
+            <div class="option-container">
+            </div>
+        </div>
+        <div class="buttons-container">
+            <div class="number-container">
+                <div></div>
+                <button style="color: #ff6600;"><i class="fa-solid fa-c"></i></button>
+                <button><i class="fa-solid fa-delete-left"></i></button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <div></div>
+                <button>0</button>
+                <div></div>
+            </div>
+            <div class="oparator-container">
+                <button>/</button>
+                <button>*</button>
+                <button>-</button>
+                <button>+</button>
+                <button class="button-muted">=</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
