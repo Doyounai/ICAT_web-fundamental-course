@@ -168,9 +168,23 @@ button:hover {
 }
 
 .history-container {
-    visibility: hidden;
+    visibility: visible;
     background-color: #494949;
-    width: 0px;
+    width: 350px;
+    padding: 10px 40px;
+}
+
+.history-title{
+    padding: 15px 20px;
+    font-size: 2rem;
+}
+
+#history-content>button{
+    background-color: #ff6600;
+    color: #ffffff;   
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 20px 0px;
 }
 
 .history-content {

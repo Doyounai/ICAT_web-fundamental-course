@@ -1,8 +1,11 @@
 const resultDom = document.getElementById('result');
 const formulaDom = document.getElementById('formula');
+const hisContentDom  = document.getElementById('history-content');
 
 let numberTemp = '';
 let formula = [];
+
+let historys = [];
 
 const updateFormulaDisplay = () => {
     const result = formula.reduce((acc, val) => {
@@ -53,15 +56,21 @@ const onOparatorButtonClick = (oparator) => {
 
 }
 
+let isFromHistory = false;
+
 const onSummitClick = () => {
     if(formula.length <= 0){
         return;
     }
 
-    if(numberTemp !== ''){
-        formula.push(Number(numberTemp));
-    }else{
-        formula.pop();
+    console.log(isFromHistory);
+    if(!isFromHistory){
+        if(numberTemp !== ''){
+            formula.push(Number(numberTemp));
+        }else{  
+            formula.pop();
+        }
+        saveHistory(formula);
     }
 
     let formulaDisplay = [...formula];
@@ -120,6 +129,35 @@ const onSummitClick = () => {
         return acc + val
     }, '');
     resultDom.innerText = result;
+
+    isFromHistory = false;
+}
+
+const saveHistory = (formulaP) => {
+
+    historys.push([...formulaP]);
+    hisContentDom.innerHTML = '';
+    
+    historys.forEach((item, index) => {
+        const button = document.createElement('button');
+        button.innerText = item.reduce((acc, val) => {
+            return acc + val;
+        }, '');
+
+        button.className = 'history-button';
+        button.value = (index).toString();
+
+        button.addEventListener('click', (event) => {
+            onClearButtonClick();
+            isFromHistory = true;
+            console.log(historys[event.target.value]);
+            formula = [...historys[event.target.value]];
+            onSummitClick();
+            // updateFormulaDisplay();
+        }, false);
+
+        hisContentDom.appendChild(button);
+    });
 }
 
 const isLastAreOparator = () => {

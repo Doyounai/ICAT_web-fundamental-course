@@ -18,42 +18,43 @@
             <!-- javascript appendchild ในนี้ -->
             <div id="history-content" class="history-content"></div>
         </div>
-    </div>
-    <div class="main-container">
-        <button class="history"><i class="fa-solid fa-clock-rotate-left"></i></button>
-        <div class="result-container">
-            <p id="formula"></p>
-            <p id="result"></p>
-            <div class="option-container">
+        <div class="main-container">
+            <button class="history"><i class="fa-solid fa-clock-rotate-left"></i></button>
+            <div class="result-container">
+                <p id="formula"></p>
+                <p id="result"></p>
+                <div class="option-container">
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="number-container">
+                    <div></div>
+                    <button onclick="onClearButtonClick()" style="color: #ff6600;"><i class="fa-solid fa-c"></i></button>
+                    <button onclick="onDeleteButtonClick()"><i class="fa-solid fa-delete-left"></i></button>
+                    <button value="7" onclick="onNumberButtonClick(value)">7</button>
+                    <button value="8" onclick="onNumberButtonClick(value)">8</button>
+                    <button value="9" onclick="onNumberButtonClick(value)">9</button>
+                    <button value="4" onclick="onNumberButtonClick(value)">4</button>
+                    <button value="5" onclick="onNumberButtonClick(value)">5</button>
+                    <button value="6" onclick="onNumberButtonClick(value)">6</button>
+                    <button value="1" onclick="onNumberButtonClick(value)">1</button>
+                    <button value="2" onclick="onNumberButtonClick(value)">2</button>
+                    <button value="3" onclick="onNumberButtonClick(value)">3</button>
+                    <div></div>
+                    <button value="0" onclick="onNumberButtonClick(value)">0</button>
+                    <div></div>
+                </div>
+                <div class="oparator-container">
+                    <button value="/" onclick="onOparatorButtonClick(value)">/</button>
+                    <button value="*" onclick="onOparatorButtonClick(value)">*</button>
+                    <button value="-" onclick="onOparatorButtonClick(value)">-</button>
+                    <button value="+" onclick="onOparatorButtonClick(value)">+</button>
+                    <button onclick="onSummitClick()" class="button-muted">=</button>
+                </div>
             </div>
         </div>
-        <div class="buttons-container">
-            <div class="number-container">
-                <div></div>
-                <button onclick="onClearButtonClick()" style="color: #ff6600;"><i class="fa-solid fa-c"></i></button>
-                <button onclick="onDeleteButtonClick()"><i class="fa-solid fa-delete-left"></i></button>
-                <button value="7" onclick="onNumberButtonClick(value)">7</button>
-                <button value="8" onclick="onNumberButtonClick(value)">8</button>
-                <button value="9" onclick="onNumberButtonClick(value)">9</button>
-                <button value="4" onclick="onNumberButtonClick(value)">4</button>
-                <button value="5" onclick="onNumberButtonClick(value)">5</button>
-                <button value="6" onclick="onNumberButtonClick(value)">6</button>
-                <button value="1" onclick="onNumberButtonClick(value)">1</button>
-                <button value="2" onclick="onNumberButtonClick(value)">2</button>
-                <button value="3" onclick="onNumberButtonClick(value)">3</button>
-                <div></div>
-                <button value="0" onclick="onNumberButtonClick(value)">0</button>
-                <div></div>
-            </div>
-            <div class="oparator-container">
-                <button value="/" onclick="onOparatorButtonClick(value)">/</button>
-                <button value="*" onclick="onOparatorButtonClick(value)">*</button>
-                <button value="-" onclick="onOparatorButtonClick(value)">-</button>
-                <button value="+" onclick="onOparatorButtonClick(value)">+</button>
-                <button onclick="onSummitClick()" class="button-muted">=</button>
-            </div>
-        </div>
     </div>
+
 
     <script src="./calculator.js"></script>
 </body>
