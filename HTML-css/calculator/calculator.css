@@ -43,10 +43,13 @@ body {
     text-align: right;
 }
 
-#history {
+#formula {
     margin: 0;
     width: 100%;
-    font-size: 1rem;
+    font-size: 3rem;
+    word-wrap: break-word;
+
+    min-height: 55px;
 }
 
 #result {
@@ -54,6 +57,9 @@ body {
     width: 100%;
     font-size: 4rem;
     font-weight: 900;
+    word-wrap: break-word;
+
+    min-height: 74px;
 }
 
 .buttons-container {
