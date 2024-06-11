@@ -1,5 +1,19 @@
 {
+  "devDependencies": {
+    "nodemon": "^3.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "name": "advjavascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "nodemon": "^3.1.0"
+    "axios": "^1.7.2"
   }
 }

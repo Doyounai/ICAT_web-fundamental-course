@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.serch{
+    margin-top: 15px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+input:focus{
+    outline: none;
+}
+input{
+    font-size: 2rem;
+    border-radius: 15px;
+    text-indent: 1rem;
+    border: 2px solid burlywood;
+}
+.btn{
+    font-size: 2rem;
+}

@@ -92,6 +92,7 @@ const onSummitClick = () => {
                 formula[i - 1] / formula[i + 1];
 
             formula.splice(i - 1, 3);
+            
             formulaTemp = [
                 ...formula.slice(0, i-1), 
                 temp, 
